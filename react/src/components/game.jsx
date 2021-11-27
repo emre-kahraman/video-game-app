@@ -10,14 +10,15 @@ class Game extends React.Component {
         game_details: this.props.game_details,
         category: this.props.category,
         company: this.props.company,
-        game_engine: this.props.game_engine
+        game_engine: this.props.game_engine,
+        img: this.props.img
 }
 
     render() {
         return <div class="container py-4">
         <article style = {this.styles} class="postcard dark blue">
           <a class="postcard__img_link">
-            <img class="postcard__img" src="https://compass-ssl.xbox.com/assets/a0/4f/a04f2744-74d9-4668-8263-e0261fbea869.jpg?n=GTA-V_GLP-Page-Hero-1084_1920x1080.jpg" alt="Image Title" />
+            <img class="postcard__img" src={this.img} alt="Image Title" />
           </a>
           <div class="postcard__text">
             <h1 class="postcard__title blue"><a>{this.state.name}</a></h1>

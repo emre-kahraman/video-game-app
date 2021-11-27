@@ -16,7 +16,7 @@ class Games extends React.Component {
       }
     render() { 
         return <div class>
-            {this.state.games.map(game =>(<Game name = {game.name} game_details = {game.game_details} category = {game.category} company = {game.company}/>))}
+            {this.state.games.map(game =>(<Game name = {game.name} game_details = {game.game_details} category = {game.category} company = {game.company} img = {game.img}/>))}
         </div>;
     }
 }
