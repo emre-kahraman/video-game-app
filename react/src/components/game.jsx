@@ -18,7 +18,7 @@ class Game extends React.Component {
         return <div class="container py-4">
         <article style = {this.styles} class="postcard dark blue">
           <a class="postcard__img_link">
-            <img class="postcard__img" src={this.img} alt="Image Title" />
+            <img class="postcard__img" src={this.state.img} alt="Image Title" />
           </a>
           <div class="postcard__text">
             <h1 class="postcard__title blue"><a>{this.state.name}</a></h1>

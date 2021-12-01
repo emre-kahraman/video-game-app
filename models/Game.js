@@ -6,6 +6,8 @@ const GameSchema = new mongoose.Schema(
         game_details: {type: String, required: true},
         category: {type: String, required: true},
         company: {type: String, required: true},
+        img: {type: String, required: true},
+        awards: {type: String}
     }
 );
 
